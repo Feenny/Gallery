@@ -1,0 +1,267 @@
+@font-face {
+
+    font-family: bahnschrift; /* Имя шрифта */
+    
+    src: url(fonts/bahnschrift.ttf); /* Путь к файлу со шрифтом */
+    
+    }
+*{
+    font-family: bahnschrift;
+    padding: 0;
+    margin: 0;
+}
+div{
+    display: block;
+}
+#container>div{
+    display: block;
+    height:140vh;
+}
+#container{
+    z-index: 2;
+    margin-top:60px ;
+}
+#header { /* Верхний блок */
+    margin-top: -60px;
+    z-index: 1;
+    display: block;
+    position: fixed;
+    width: 100%;
+    color: rgb(214, 173, 168);
+    height: 60px;
+    background: #27201e; 
+   }
+
+h1{
+    width: 280px; 
+    font-size: 40px;
+    padding: 10px 0px 10px 20px;   
+}
+
+#leftcontainer{
+    float: left;   
+    width: 300px;
+     background: #9e6e6e url(leftbg-grey.png) no-repeat;
+}
+#leftcol { /* Левая колонка */
+    position: fixed;
+    float: left;
+    width: 300px;    
+  }
+
+
+#rightcol { /* Правая колонка */
+    margin-left: 300px;
+	background-color: rgb(247, 238, 232);
+  }
+ 
+
+ul {
+    position: fixed;
+    margin-top: 20px;
+    padding: 30px 0px;
+    position: relative;
+    list-style-type: none;
+    display: block;     
+}
+li{
+   height: 48px;
+    line-height: 48px;
+    position: relative;
+    /*padding: 12px 0px;*/
+    font-weight: bold;
+    margin: 7px 20px;
+    display: block;
+      
+}
+#menu a{
+    color:rgb(252, 230, 220);
+    height: 48px;
+}
+
+#menu li, a { 
+    font-size: 24px;
+    width: 260px;
+    text-decoration: none; 
+    text-align: center;  
+    color:rgb(201, 136, 124);
+    display: block;
+    }
+#menu li:hover{
+    margin: 7px 0;
+    width: 100%;
+    font-weight: bold; 
+    color: rgb(255, 220, 217);
+    background-color: rgba(59, 30, 30, 0.5);
+}
+#menu a:hover{
+    width: 100%;
+    font-weight: bold; 
+    color: rgb(255, 220, 217);
+}
+
+#rightChildcol{
+    position: relative;
+   /* background-color: rgb(214, 177, 177);*/
+   background-color:rgb(243, 224, 222);
+    width: 100%;
+    height: 45%;
+}
+
+#bodyofthree{
+    background-color:rgb(243, 224, 222);
+    position: relative;
+    height: 55%;
+    width: 100%;
+    display: block;
+    
+}
+#rigth_three{
+    margin: 1% 2%;
+    height:91%;
+    width: 96%;
+    display: block;
+    position: absolute;
+    background-color: rgb(201, 152, 152);
+  
+}
+#rigth_three>div{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 1.5%;
+    top: 50px;
+    height: 550px;
+    width:463px;
+    background-color: rgb(255, 242, 242);
+
+}
+
+#artist{
+    position: relative;
+}
+.image{
+    background-repeat:  no-repeat;
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background-size: 100% auto;
+}
+h2{
+
+padding: 5px;
+}
+.text{
+    padding: 10px;
+
+}
+#artist .image{
+    background-image: url(ВанГог.jpeg);
+}
+#picture .image{
+    background-image: url( картина.jpg);
+}
+#genre .image{
+    background-image: url( импрессионизм.jpg);
+}
+
+.slider{
+    
+    max-width: 100%;
+    position: relative;
+    margin: 0 2%;
+    height: 100%;
+
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.9s ease;
+    border-radius: 0 3px 3px 0;
+    color: white;
+    user-select: none;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(39, 26, 26, 0.582);
+}
+/* Заголовок слайда */
+.slideText {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+/* Кружочки */
+.slider-dots {
+    text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.3s;
+    animation-name: fade;
+    animation-duration: 1.3s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .7
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .7
+    }
+    to {
+        opacity: 1
+    }
+}
+
+p{
+    width: 100%;
+    margin-top: 5px;
+    text-indent: 40px;
+    line-height: 23px;
+  }

@@ -1,0 +1,148 @@
+@font-face {
+
+    font-family: bahnschrift; /* Имя шрифта */
+    
+    src: url(fonts/bahnschrift.ttf); /* Путь к файлу со шрифтом */
+    
+    }
+*{
+    font-family: bahnschrift;
+    padding: 0;
+    margin: 0;
+}
+div{
+    display: block;
+}
+#container>div{
+    display: block;
+    height:170vh;
+}
+#container{
+    z-index: 2;
+    margin-top:60px ;
+}
+#header { /* Верхний блок */
+    margin-top: -60px;
+    z-index: 1;
+    display: block;
+    position: fixed;
+    width: 100%;
+    color: rgb(214, 173, 168);
+    height: 60px;
+    background: #27201e; 
+   }
+
+h1{
+    width: 280px; 
+    font-size: 40px;
+    padding: 10px 0px 10px 20px;   
+}
+
+#leftcontainer{
+   height: 100%;
+    float: left;   
+    width: 300px;
+     background: #9e6e6e url(leftbg-grey.png) no-repeat;
+}
+#leftcol { /* Левая колонка */
+    position: fixed;
+    float: left;
+    width: 300px;    
+  }
+
+
+#rightcol { /* Правая колонка */
+    position: relative;
+    margin-left: 300px;
+	background-color: rgb(247, 238, 232);
+  }
+ 
+  ul {
+    position: fixed;
+    margin-top: 20px;
+    padding: 30px 0px;
+    position: relative;
+    list-style-type: none;
+    display: block;     
+}
+li{
+   height: 48px;
+    line-height: 48px;
+    position: relative;
+    /*padding: 12px 0px;*/
+    font-weight: bold;
+    margin: 7px 20px;
+    display: block;
+      
+}
+a{
+    color:rgb(252, 230, 220);
+    height: 48px;
+}
+
+#menu li, a { 
+    font-size: 24px;
+    width: 260px;
+    text-decoration: none; 
+    text-align: center;  
+    color:rgb(201, 136, 124);
+    display: block;
+    }
+#menu li:hover{
+    margin: 7px 0;
+    width: 100%;
+    font-weight: bold; 
+    color: rgb(255, 220, 217);
+    background-color: rgba(59, 30, 30, 0.5);
+}
+a:hover{
+    width: 100%;
+    font-weight: bold; 
+    color: rgb(255, 220, 217);
+}
+
+#rightcol{
+    position: relative;
+}
+
+.work { 
+    width: 33.33333333%;
+    margin: 0 auto;
+    background-size: cover;
+    float: left;
+  }
+  
+  .box {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50%;
+    padding-bottom: 50%;
+  }
+
+  #img1{
+    background-image: url(картинки/1.jpg);
+  }
+  #img2{
+    background-image: url(картинки/2.jpg);
+  }
+  #img3{
+    background-image: url(картинки/3.jpg);
+  }
+  #img4{
+    background-image: url(картинки/4.jpg);
+  }
+  #img5{
+    background-image: url(картинки/5.jpg);
+  }
+  #img6{
+    background-image: url(картинки/6.jpg);
+  }
+  #img7{
+    background-image: url(картинки/7.jpg);
+  }
+  #img8{
+    background-image: url(картинки/8.jpg);
+  }
+  #img9{
+    background-image: url(картинки/9.jpg);
+  }

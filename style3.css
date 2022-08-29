@@ -1,0 +1,153 @@
+@font-face {
+
+    font-family: bahnschrift; /* Имя шрифта */
+    
+    src: url(fonts/bahnschrift.ttf); /* Путь к файлу со шрифтом */
+    
+    }
+*{
+    font-family: bahnschrift;
+    padding: 0;
+    margin: 0;
+}
+div{
+    display: block;
+}
+#container>div{
+    display: block;
+    height:100vh;
+}
+#container{
+    z-index: 2;
+    margin-top:60px ;
+    
+}
+#header { /* Верхний блок */
+    margin-top: -60px;
+    z-index: 1;
+    display: block;
+    position: fixed;
+    width: 100%;
+    color: rgb(214, 173, 168);
+    height: 60px;
+    background: #27201e; 
+   }
+
+h1{
+    width: 280px; 
+    font-size: 40px;
+    padding: 10px 0px 10px 20px;   
+}
+
+#leftcontainer{
+    float: left;   
+    width: 300px;
+     background: #9e6e6e url(leftbg-grey.png) no-repeat;
+}
+#leftcol { /* Левая колонка */
+    position: fixed;
+    float: left;
+    width: 300px;    
+  }
+#rightcol { /* Правая колонка */
+    position: relative;
+    margin-left: 300px;
+    margin-right: 600px;
+	  background-color: rgb(248, 219, 212);
+  }
+#imgcol { /*колонка с изображением */
+    position: relative;
+    float: right;
+    width: 600px;    
+    background-color:rgb(199, 131, 121);
+  }
+
+  #menu ul {
+    position: fixed;
+    margin-top: 20px;
+    padding: 30px 0px;
+    position: relative;
+    list-style-type: none;
+    display: block;     
+}
+#menu li{
+   height: 48px;
+    line-height: 48px;
+    position: relative;
+    /*padding: 12px 0px;*/
+    font-weight: bold;
+    margin: 7px 20px;
+    display: block;
+      
+}
+ a.menuref{
+    color:rgb(252, 230, 220);
+    height: 48px;
+}
+#menu li,  a.menuref{ 
+    font-size: 24px;
+    width: 260px;
+    text-decoration: none; 
+    text-align: center;  
+    color:rgb(201, 136, 124);
+    display: block;
+    }
+#menu li:hover{
+    margin: 7px 0;
+    width: 100%;
+    font-weight: bold; 
+    color: rgb(255, 220, 217);
+    background-color: rgba(59, 30, 30, 0.5);
+}
+ a:hover.menuref{
+    width: 100%;
+    font-weight: bold; 
+    color: rgb(255, 220, 217);
+}
+
+
+#accordion {
+  padding: 5%;
+  margin: 10px 5%;
+}
+#accordion > h3 {
+  width: 80%;
+  color: rgb(199, 131, 121);
+  cursor: pointer;
+  margin: 5px 0;
+  padding: .5em .5em .5em .7em;
+  border: 1px solid rgb(243, 237, 237);
+  border-radius: 5px;
+  background: #f5f0f0;
+  font-weight: normal;
+  color: #454545;
+}
+#accordion p{
+  width: 80%;
+  text-indent: 50px;
+  line-height: 25px;
+}
+#accordion > h3.select {
+  border: 1px solid rgb(199, 131, 121);
+  background: rgb(199, 131, 121);
+  font-weight: normal;
+  color: white;
+}
+#accordion > div {
+  height: 0;
+  overflow: hidden;
+  color: #333;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: height .5s;
+}
+.tabs__text {
+  text-align: justify;
+}
+
+.img_change{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+}

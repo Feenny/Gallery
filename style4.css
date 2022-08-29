@@ -1,0 +1,206 @@
+@font-face {
+
+    font-family: bahnschrift; /* Имя шрифта */
+    
+    src: url(fonts/bahnschrift.ttf); /* Путь к файлу со шрифтом */
+    
+    }
+  *{
+    font-family: bahnschrift;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #container>div{
+    display: block;
+    height:100vh;
+  }
+  #container{
+    z-index: 2;
+    margin-top:60px ;
+  }
+  #header { /* Верхний блок */
+    margin-top: -60px;
+    z-index: 1;
+    display: block;
+    position: fixed;
+    width: 100%;
+    color: rgb(214, 173, 168);
+    height: 60px;
+    background: #27201e; 
+   }
+  
+  h1{
+    width: 280px; 
+    font-size: 40px;
+    padding: 10px 0px 10px 20px;   
+  }
+  
+  #leftcontainer{
+    float: left;   
+    width: 300px;
+     background: #9e6e6e url(leftbg-grey.png) no-repeat;
+  }
+  #leftcol { /* Левая колонка */
+    position: fixed;
+    float: left;
+    width: 300px;    
+  }
+  
+  
+  #rightcol { /* Правая колонка */
+    margin-left: 300px;
+  background-color: rgb(247, 238, 232);
+  }
+  
+  
+  #menu ul {
+    position: fixed;
+    margin-top: 20px;
+    padding: 30px 0px;
+    position: relative;
+    list-style-type: none;
+    display: block;     
+  }
+  #menu li{
+   height: 48px;
+    line-height: 48px;
+    position: relative;
+    /*padding: 12px 0px;*/
+    font-weight: bold;
+    margin: 7px 20px;  
+  }
+  a{
+    color:rgb(252, 230, 220);
+    height: 48px;
+  }
+  
+  #menu li, a { 
+    font-size: 24px;
+    width: 260px;
+    text-decoration: none; 
+    text-align: center;  
+    color:rgb(201, 136, 124);
+    display: block;
+    }
+  #menu li:hover{
+    margin: 7px 0;
+    width: 100%;
+    font-weight: bold; 
+    color: rgb(255, 220, 217);
+    background-color: rgba(59, 30, 30, 0.5);
+  }
+  a:hover{
+    width: 100%;
+    font-weight: bold; 
+    color: rgb(255, 220, 217);
+  }
+  
+  
+  #artist{
+    position: relative;
+  }
+  .image{
+    background-repeat:  no-repeat;
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background-size: 100% auto;
+  }
+  h2{
+  padding: 5px;
+  }
+
+  .text{
+    padding: 10px;
+  }
+  
+  #genre .image{
+    background-image: url( импрессионизм.jpg);
+  }
+  
+  #rightcol{
+    position: relative;
+    background-color: rgb(62, 43, 41); ;
+  }
+  
+  
+  #tabs {
+    padding-top: 2%;
+    height: 88%;
+    width: 90%;
+    margin: 1% ;
+    border-radius: 10px;
+    position: absolute;
+  }
+  #testcol{
+    height: 88%;
+    width: 100%;
+    border-radius:  0 15px  15px  15px;
+    padding: 3%;
+    border: 8px solid rgb(199, 131, 121);
+    background-color: rgb(252, 243, 241);
+  }
+  .tabs__list {
+    width: 100%;
+    list-style-type: none;
+    padding-left: 0px; 
+    line-height: 33px;
+    display: inline-block;
+  }
+  .tabs__item {
+    display: inline-block;
+    color: #183e4c;
+    white-space: nowrap;   
+    font-weight: bold;
+    font-size: 20px;
+    padding: 3px 40px;
+    background: rgb(240, 223, 223);
+    cursor: pointer;
+    border-radius: 7px 7px 0 0;
+    transition: all .2s;
+  }
+  .tabs__item.select {
+    color: #fff;
+    background: rgb(199, 131, 121);
+  }
+  .tabs__text  {
+    display: none;
+    font-size: 20px;
+    line-height: 1.5;
+    text-indent: 50px;
+    text-align: justify;
+    padding: 1% 2%;
+    
+  }
+  .tabs__text.select {
+    display: block;
+    font-size: 20px;
+    line-height: 1.5;
+    text-indent: 50px;
+    text-align: justify;
+  }
+
+  .img_left{
+   /* object-fit: cover;*/
+ 
+    width: 40%;
+    height: 40%;
+    float: right;
+    margin:25px 10px 20px 50px;
+   
+    /*background-color: rgb(255, 255, 255);*/
+    border: 2px solid rgb(253, 233, 229);
+    
+  }
+
+  .img_right{
+
+    width: 30%;
+    height: 30%;
+    float: left;
+    margin:0px 50px 20px 10px;
+   
+    /*background-color: rgb(255, 255, 255);*/
+    border: 2px solid rgb(253, 233, 229);
+  }
